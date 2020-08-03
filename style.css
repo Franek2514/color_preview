@@ -1,0 +1,74 @@
+body
+{
+    background-color: #22acbb;
+}
+
+#container
+{
+    margin: 50px auto;
+    border: 4px solid black;
+    width: 50%;
+    height: 80%;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #ddd;
+}
+
+#color_preview
+{
+    margin: 20px auto;
+    width: 60%;
+    border: 4px solid red;
+    min-height: 300px;
+}
+
+.no_set_color
+{
+    
+    background: linear-gradient(-50deg, #66ff66, #ffff4d, #0077b3, #ffa64d);
+    background-size: 500% 500%;
+    animation-name: gradient_change;
+    animation-duration: 16s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.set_color
+{
+    
+}
+
+@keyframes gradient_change
+{
+    0%
+    {
+        background-position: 0 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0 50%;
+    }
+}
+
+input
+{
+    padding: 10px;
+    font-size: 18px;
+}
+
+input[name="hex_code"]
+{
+    width: 30%;
+}
+
+input[name="sub_button"]
+{
+    background-color: #1e90ff;
+    cursor: pointer;
+    position: relative;
+}
